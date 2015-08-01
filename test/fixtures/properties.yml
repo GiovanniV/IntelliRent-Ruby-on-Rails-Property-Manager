@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  address: MyText
+  rent: MyString
+  deposit: MyString
+  lease: MyString
+  pets: 1
+  utilities: 1
+  description: MyText
+  avail: MyString
+  parking: MyString
+  squarefeet: MyString
+
+two:
+  title: MyString
+  address: MyText
+  rent: MyString
+  deposit: MyString
+  lease: MyString
+  pets: 1
+  utilities: 1
+  description: MyText
+  avail: MyString
+  parking: MyString
+  squarefeet: MyString

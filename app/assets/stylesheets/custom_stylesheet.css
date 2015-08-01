@@ -1,0 +1,49 @@
+.property a img{
+	width:100px;
+	height:100px;
+}
+td.property {
+  width: 29%;
+}
+#header{
+	background:#58595B;
+	color: #D5D5D6;
+}
+#tabs li a{
+	color: #D5D5D6;
+}
+#title_bar .action_items span.action_item > a, #title_bar .action_items span.action_item > .dropdown_menu > a{
+	background: #21A8B1;
+	color: #FFF;
+	
+}
+#title_bar .action_items span.action_item > a:hover, #title_bar .action_items span.action_item > .dropdown_menu > a:hover{
+	background: #21A8B1;
+	color: #5e6469;
+}
+form .buttons input[type="submit"], form .buttons input[type="button"], form .buttons button, form .actions input[type="submit"], form .actions input[type="button"], form .actions button,form fieldset.buttons li.cancel a, form fieldset.actions li.cancel a{
+	background: #21A8B1;
+	
+}
+h2#page_title{
+	color: #21A8B1;
+}
+.breadcrumb a, .breadcrumb span{
+	color: #58595B !important;
+}
+/* #site_title{
+	background:url('logo.png');
+} */
+input[type="submit"], form.filter_form a.clear_filters_btn{
+	background: #21A8B1 !important;
+	color: #FFF !important;
+	text-shadow:none !important;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
+	border-color:lightgrey #c7c7c7 #c2c2c2 !important;
+}
+form input[type="submit"]:hover:not(.disabled), form input[type="button"]:hover:not(.disabled), form button:hover:not(.disabled),form.filter_form a.clear_filters_btn:hover{
+	background: #FFF !important;
+	color: #5e6469 !important;
+}
