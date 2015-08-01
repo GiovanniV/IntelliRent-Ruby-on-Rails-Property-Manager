@@ -1,5 +1,5 @@
 <h1>Listing Properties</h1>
-<%= link_to 'New property', new_property_path %>
+
 <table>
   <tr>
     <th>Title</th>
@@ -11,10 +11,7 @@
     <tr>
       <td><%= property.title %></td>
       <td><%= property.description %></td>
-      <td><%= link_to 'Show', property_path(property) %></td>
-	  <% if current_user.present? %>
-      <td><%= link_to 'Edit', edit_property_path(property) %></td>
-      <% end %>		  
+      <td><%= link_to 'Show', property_path(property) %></td>	   
     </tr>
   <% end %>
 </table>
