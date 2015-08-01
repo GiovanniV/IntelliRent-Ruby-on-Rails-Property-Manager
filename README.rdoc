@@ -15,3 +15,5 @@ Things you may want to cover:
 
 * Manage Orders
 
+* Manage Customers
+
