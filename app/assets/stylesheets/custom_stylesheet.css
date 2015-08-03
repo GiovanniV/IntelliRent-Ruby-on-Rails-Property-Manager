@@ -6,11 +6,18 @@ td.property {
   width: 29%;
 }
 #header{
-	background:#58595B;
+	/*background:#58595B;*/
+	background-color: #676e73;
 	color: #D5D5D6;
+}
+#site_title_image {
+  width: 300px;
 }
 #tabs li a{
 	color: #D5D5D6;
+}
+#header ul.tabs{
+	text-align:center;
 }
 #title_bar .action_items span.action_item > a, #title_bar .action_items span.action_item > .dropdown_menu > a{
 	background: #21A8B1;
@@ -34,7 +41,7 @@ h2#page_title{
 /* #site_title{
 	background:url('logo.png');
 } */
-input[type="submit"], form.filter_form a.clear_filters_btn{
+input[type="submit"], form.filter_form a.clear_filters_btn, li.cancel a{
 	background: #21A8B1 !important;
 	color: #FFF !important;
 	text-shadow:none !important;
@@ -43,7 +50,7 @@ input[type="submit"], form.filter_form a.clear_filters_btn{
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
 	border-color:lightgrey #c7c7c7 #c2c2c2 !important;
 }
-form input[type="submit"]:hover:not(.disabled), form input[type="button"]:hover:not(.disabled), form button:hover:not(.disabled),form.filter_form a.clear_filters_btn:hover{
+form input[type="submit"]:hover:not(.disabled), form input[type="button"]:hover:not(.disabled), form button:hover:not(.disabled),form.filter_form a.clear_filters_btn:hover, li.cancel a:hover{
 	background: #FFF !important;
 	color: #5e6469 !important;
 }
