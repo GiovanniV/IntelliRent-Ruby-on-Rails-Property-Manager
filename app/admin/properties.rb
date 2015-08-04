@@ -1,6 +1,6 @@
 ActiveAdmin.register Property do
 menu :priority => 2, :label => "Properties"
-  permit_params :title, :description,:author,:price, :featured, :available_on,:image_file_name,:rent, :deposit, :lease, :pets, :utilities, :available_on, :parking, :squarefeet, :country, :state, :city, :zipcode, :address
+  permit_params :title, :description,:author,:price, :featured, :available_on,:image_file_name, :rent,:deposit, :lease, :pets, :utilities, :available_on, :parking, :squarefeet, :country, :state, :city, :zipcode, :address
  scope :all, :default => true
   scope :available do |properties|
     properties.where("available_on < ?", Date.today)
@@ -13,7 +13,7 @@ menu :priority => 2, :label => "Properties"
   end
   index :as => :grid do |property|
 	div do
-	if property.image_file_name.blank?
+=begin	if property.image_file_name.blank?
 	  a :href => admin_property_path(property) do
         image_tag("properties/no_image.jpg")
 		end	
@@ -23,6 +23,7 @@ menu :priority => 2, :label => "Properties"
 	end
 	
     end	
+=end	
 	end
 	a truncate(property.title), :href => admin_property_path(property)
   end
@@ -34,7 +35,10 @@ menu :priority => 2, :label => "Properties"
 		link_to "Add Property" , new_admin_property_path
 	    end
 		action_item :only => :show do
-		link_to "Edit Property" , edit_admin_property_path
+		link_to "Edit Property" , edit_admin_property_path, :confirm => "Are you sure"
+	    end
+		action_item :only => :show do
+		link_to "Delete Property" , admin_property_path(property), :method => :delete, :confirm => "Are you sure"
 	    end
 
   sidebar :property_stats, :only => :show do
@@ -74,9 +78,15 @@ menu :priority => 2, :label => "Properties"
 	 f.input :zipcode
 	 f.input :address
 	 end
-	 f.inputs "Add Images" do
-	 f.input :image_file_name
-	 end	 
+	 f.inputs "Add Images" do	 
+	 f.file_field :image_file_name, multiple: false	 
+	 end
+=begin	 f.inputs "Gallery" do
+	 f.has_many :property_attachments do |ff|
+	   ff.input :image_file
+	 end
+	 end
+=end	 
 	 f.actions
    end
  #Edit Property form page ends
@@ -110,9 +120,10 @@ menu :priority => 2, :label => "Properties"
   end
   panel "Images" do
   attributes_table_for property do
-  row :image_file_name do
+=begin  row :image_file_name do
   image_tag property.image_file_name.url
   end
+=end  
   end
   end
   

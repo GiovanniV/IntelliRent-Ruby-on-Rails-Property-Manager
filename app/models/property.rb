@@ -6,4 +6,8 @@ class Property < ActiveRecord::Base
 	def set_available_on
 	  self.available_on ||= DateTime.now.to_date
 	end
+	def property_params
+      params.require(:property).permit()
+    end
+	
 end

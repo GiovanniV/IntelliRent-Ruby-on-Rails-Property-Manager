@@ -43,6 +43,7 @@ gem 'devise'
 gem 'activeadmin', '~> 1.0.0.pre1'
 gem 'coffee-script-source', '1.8.0'
 gem 'country_select', github: 'stefanpenner/country_select'
-gem 'carrierwave'
+#gem 'carrierwave'
+gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
 
 ruby '2.1.5'

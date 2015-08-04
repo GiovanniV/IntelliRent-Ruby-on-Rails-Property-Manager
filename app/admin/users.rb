@@ -1,22 +1,29 @@
 ActiveAdmin.register User, :as => "Customer" do
+ permit_params [:email, :password, :password_confirmation] 
+ form do |f|
+      f.inputs "Customer" do
+        f.input :email
+        f.input :password
+        f.input :password_confirmation
+      end
+      f.actions
+    end
 
   menu :priority => 4
   config.batch_actions = true
 
-  filter :username
   filter :email
   filter :created_at
 
   index do
     selectable_column
     id_column
-    column :username
     column :email
     column :created_at
     actions
   end
 
-  show :title => :username do
+  show :title => :email do
     panel "Order History" do
       table_for(customer.orders) do
         column("Order", :sortable => :id) {|order| link_to "##{order.id}", admin_order_path(order) }
@@ -38,7 +45,4 @@ ActiveAdmin.register User, :as => "Customer" do
     end
   end
 
-  sidebar "Active Admin Demo" do
-    render('/admin/sidebar_links', :model => 'users')
-  end
 end

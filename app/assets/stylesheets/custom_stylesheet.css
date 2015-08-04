@@ -54,3 +54,6 @@ form input[type="submit"]:hover:not(.disabled), form input[type="button"]:hover:
 	background: #FFF !important;
 	color: #5e6469 !important;
 }
+.admin_properties #collection_selection_toggle_panel{
+	display:none;
+}

@@ -32,8 +32,8 @@ class PropertyImageUploader < CarrierWave::Uploader::Base
   # end
 
   # Create different versions of your uploaded files:
-  # version :thumb do
-  #   process :resize_to_fit => [50, 50]
+   #version :thumb do
+   #  process :resize_to_fit => [250, 250]
   # end
 
   # Add a white list of extensions which are allowed to be uploaded.
