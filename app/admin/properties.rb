@@ -118,12 +118,12 @@ menu :priority => 2, :label => "Properties"
   row :address
   end
   end
-  panel "Images" do
+  panel "Image" do
   attributes_table_for property do
-=begin  row :image_file_name do
+  row :image_file_name do
   image_tag property.image_file_name.url
   end
-=end  
+  
   end
   end
   
