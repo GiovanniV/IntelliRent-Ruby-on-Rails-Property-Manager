@@ -1,19 +1,17 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails Property Management System
+Tech Stack:
 
-Things you may want to cover:
+• Node
+• Express
+• PhantomJS
+• MongoLab
+• MongoDB Instance
+• Heroku Dyno
+• ProxyMesh
 
 * Ruby version 2.1.5
 
-* Configuration
-
-* Database creation
-
-* Create Properties
-
-* Manage Orders
-
-* Manage Customers
+Giovanni Venegas
 
