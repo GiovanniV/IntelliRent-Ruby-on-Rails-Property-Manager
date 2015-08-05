@@ -1,4 +1,4 @@
-== Property Management System ==== by === Giovanni Venegas
+Property Management System  by  Giovanni Venegas Vanguard Software Development 
 
 Ruby on Rails Property Management System
 Tech Stack:
