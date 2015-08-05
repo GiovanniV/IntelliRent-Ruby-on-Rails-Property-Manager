@@ -1,4 +1,4 @@
-== README
+== Property Management System ==== by === Giovanni Venegas
 
 Ruby on Rails Property Management System
 Tech Stack:
@@ -13,5 +13,5 @@ Tech Stack:
 
 * Ruby version 2.1.5
 
-Giovanni Venegas
+
 
